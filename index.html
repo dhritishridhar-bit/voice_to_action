@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice to Action</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">🎙️</div>
+            <h1>Voice to Action</h1>
+            <p>Turn your thoughts into actionable tasks.</p>
+        </div>
+
+        <div class="card">
+
+            <button id="recordBtn">
+                🎙️ Start Recording
+            </button>
+
+            <p id="status">Ready to record...</p>
+
+            <div class="note-box">
+                <h2>Your Voice Note</h2>
+                <p id="transcript">
+                    Your transcript will appear here...
+                </p>
+            </div>
+
+            <button id="actionBtn" class="action-btn" disabled>
+                ✨ Create Action
+            </button>
+
+            <div id="actionBox" class="action-box hidden">
+                <h2>✅ Action Item</h2>
+                <p id="actionText"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
